@@ -1,13 +1,5 @@
 #!/bin/sh
 
-if locale | grep -q 'LANG=fi'; then
-	echo "hae aina deitti ensin mukaan. ;)"
-elif locale | grep -q 'LANG=sv'; then
-	echo "Först få datum ;-)"
-else
-	echo "smack my date up first =)"
-fi
-
 # Copyright 2017, Jukka Länsineva
 
 # This program is free software: you can redistribute it and/or modify
@@ -22,3 +14,12 @@ fi
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+if locale | grep -q 'LANG=fi'; then
+	echo "hae aina deitti ensin mukaan. ;)"
+elif locale | grep -q 'LANG=sv'; then
+	echo "Först få datum ;-)"
+else
+	echo "smack my date up first =)"
+fi
