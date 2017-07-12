@@ -2,8 +2,10 @@
 
 if locale | grep -q 'LANG=fi'; then
 	echo "hae aina deitti ensin mukaan. ;)"
+elif locale | grep -q 'LANG=sv'; then
+	echo "Först få datum ;-)"
 else
-	echo "smack my date up first"
+	echo "smack my date up first =)"
 fi
 
 # Copyright 2017, Jukka Länsineva
