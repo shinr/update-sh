@@ -1,6 +1,10 @@
 #!/bin/sh
 
-echo "hae aina deitti ensin mukaan. ;)"
+if locale | grep -q 'LANG=fi'; then
+	echo "hae aina deitti ensin mukaan. ;)"
+else
+	echo "smack my date up first"
+fi
 
 # Copyright 2017, Jukka Länsineva
 
